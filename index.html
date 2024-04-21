@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un petit compliment</title>
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <button onclick="donnerCompliment()">Recevoir un compliment</button>
+    <p id="compliment"></p>
+    <script>
+        let compliments = [
+            "Tu es incroyable !",
+            "Ton sourire illumine ma journée !",
+            "Tu es la plus courageuse !",
+            "Je suis tellement chanceux de t'avoir !",
+            "Tu rends tout mieux !"
+        ];
+
+        function donnerCompliment() {
+            let index = Math.floor(Math.random() * compliments.length);
+            document.getElementById('compliment').innerText = compliments[index];
+        }
+    </script>
+</body>
+</html>
