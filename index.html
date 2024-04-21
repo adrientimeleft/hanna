@@ -3,19 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un petit compliment</title>
+    <title>Un petit compliment pour Hanna</title>
+     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e4d7;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #6a5acd;
+        }
+
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 5px #d38370;
+        }
+
+        button:hover {
+            background-color: #ee5c42;
+        }
+
+        button:active {
+            background-color: #ee5c42;
+            box-shadow: 0 2px #d38370;
+            transform: translateY(3px);
+        }
+
+        #compliment {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #6a5acd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue !</h1>
+    <h1>En manque de confiance en toi ? Ou juste besoin de recevoir un compliment ?</h1>
+    <h2>Voici un générateur à compliment spécialement concu pour Hanna Jobert</h2>
     <button onclick="donnerCompliment()">Recevoir un compliment</button>
     <p id="compliment"></p>
     <script>
         let compliments = [
-            "Tu es incroyable !",
-            "Ton sourire illumine ma journée !",
-            "Tu es la plus courageuse !",
-            "Je suis tellement chanceux de t'avoir !",
-            "Tu rends tout mieux !"
+            "Tu sens très bon la figue, genre très très bon la figue",
+            "Tes cheveux ondulés la... Merci TikTok",
+            "Tu es un soleil, 0 blague",
+            "On me dit dans l'oreillette que tu es très intelligente. Oui je confirme",
+            "Je ne sais pas si je suis le seul mais je prends beaucoup de plaisir à t'entendre parler",
+            "T'es drôle, putain, vraiment drôle",
+            "En V de V, tes Hamis ont beaucoup de chance de t'avoir",
+            "Keske t bel, tu fais quoi ce soir ?",
+            "Tu manies très bien tes mains. Genre très bien. Je n'en dirai pas plus" 
+            "Tu rends tout mieux. Oui c'est kitch. Et alors ? C'est fou on peut plus rien dire"
         ];
 
         function donnerCompliment() {
